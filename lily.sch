@@ -397,7 +397,7 @@ F 3 "~" H 9550 1650 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	9150 1650 9300 1650
+	9150 1650 9250 1650
 $Comp
 L power:VCC #PWR017
 U 1 1 5ECB5C3C
@@ -425,24 +425,6 @@ F 3 "" H 9800 1650 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	9650 1650 9800 1650
-Wire Wire Line
-	9150 1950 9300 1950
-Wire Wire Line
-	9300 1950 9300 2150
-Wire Wire Line
-	9300 2150 9150 2150
-Wire Wire Line
-	9300 1950 9450 1950
-Connection ~ 9300 1950
-Wire Wire Line
-	9150 2050 9250 2050
-Wire Wire Line
-	9250 2050 9250 2250
-Wire Wire Line
-	9250 2250 9150 2250
-Connection ~ 9250 2050
-Wire Wire Line
-	9250 2050 9450 2050
 Text GLabel 9450 2050 2    50   Input ~ 0
 D+
 Text GLabel 9450 1950 2    50   Input ~ 0
@@ -552,14 +534,13 @@ F 3 "" H 12500 2600 50  0001 C CNN
 $EndComp
 NoConn ~ 9150 1750
 NoConn ~ 9150 2350
-NoConn ~ 9150 2550
 $Comp
 L Device:LED D1
 U 1 1 5ECDEFD9
 P 3350 8400
 F 0 "D1" V 3389 8283 50  0000 R CNN
 F 1 "LED" V 3298 8283 50  0000 R CNN
-F 2 "LED_THT:LED_D1.8mm_W3.3mm_H2.4mm" H 3350 8400 50  0001 C CNN
+F 2 "random-keyboard-parts:LED_D3.0mm-NoSilk" H 3350 8400 50  0001 C CNN
 F 3 "~" H 3350 8400 50  0001 C CNN
 	1    3350 8400
 	0    -1   -1   0   
@@ -570,7 +551,7 @@ U 1 1 5ECE53B4
 P 4050 8400
 F 0 "D2" V 4089 8283 50  0000 R CNN
 F 1 "LED" V 3998 8283 50  0000 R CNN
-F 2 "LED_THT:LED_D1.8mm_W3.3mm_H2.4mm" H 4050 8400 50  0001 C CNN
+F 2 "random-keyboard-parts:LED_D3.0mm-NoSilk" H 4050 8400 50  0001 C CNN
 F 3 "~" H 4050 8400 50  0001 C CNN
 	1    4050 8400
 	0    -1   -1   0   
@@ -581,7 +562,7 @@ U 1 1 5ECE53BE
 P 4750 8400
 F 0 "D3" V 4789 8283 50  0000 R CNN
 F 1 "LED" V 4698 8283 50  0000 R CNN
-F 2 "LED_THT:LED_D1.8mm_W3.3mm_H2.4mm" H 4750 8400 50  0001 C CNN
+F 2 "random-keyboard-parts:LED_D3.0mm-NoSilk" H 4750 8400 50  0001 C CNN
 F 3 "~" H 4750 8400 50  0001 C CNN
 	1    4750 8400
 	0    -1   -1   0   
@@ -5728,4 +5709,29 @@ Row4
 Text GLabel 4600 4500 2    50   Input ~ 0
 Row5
 NoConn ~ 12000 2200
+Wire Wire Line
+	9150 2050 9350 2050
+Wire Wire Line
+	9150 1950 9400 1950
+Wire Wire Line
+	9400 2150 9400 1950
+Wire Wire Line
+	9150 2150 9400 2150
+Connection ~ 9400 1950
+Wire Wire Line
+	9400 1950 9450 1950
+Wire Wire Line
+	9350 2250 9350 2050
+Wire Wire Line
+	9150 2250 9350 2250
+Connection ~ 9350 2050
+Wire Wire Line
+	9350 2050 9450 2050
+Wire Wire Line
+	9150 2550 9250 2550
+Wire Wire Line
+	9250 2550 9250 1650
+Connection ~ 9250 1650
+Wire Wire Line
+	9250 1650 9300 1650
 $EndSCHEMATC

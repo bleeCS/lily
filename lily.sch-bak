@@ -397,7 +397,7 @@ F 3 "~" H 9550 1650 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	9150 1650 9300 1650
+	9150 1650 9250 1650
 $Comp
 L power:VCC #PWR017
 U 1 1 5ECB5C3C
@@ -425,24 +425,6 @@ F 3 "" H 9800 1650 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	9650 1650 9800 1650
-Wire Wire Line
-	9150 1950 9300 1950
-Wire Wire Line
-	9300 1950 9300 2150
-Wire Wire Line
-	9300 2150 9150 2150
-Wire Wire Line
-	9300 1950 9450 1950
-Connection ~ 9300 1950
-Wire Wire Line
-	9150 2050 9250 2050
-Wire Wire Line
-	9250 2050 9250 2250
-Wire Wire Line
-	9250 2250 9150 2250
-Connection ~ 9250 2050
-Wire Wire Line
-	9250 2050 9450 2050
 Text GLabel 9450 2050 2    50   Input ~ 0
 D+
 Text GLabel 9450 1950 2    50   Input ~ 0
@@ -535,7 +517,7 @@ F 3 "http://www.onsemi.com/pub/Collateral/SRV05-4-D.PDF" H 12500 2100 50  0001 C
 	1    12500 2100
 	1    0    0    -1  
 $EndComp
-Text GLabel 12000 2200 0    50   Input ~ 0
+Text GLabel 13000 2200 2    50   Input ~ 0
 D-
 Text GLabel 12000 2000 0    50   Input ~ 0
 D+
@@ -552,7 +534,6 @@ F 3 "" H 12500 2600 50  0001 C CNN
 $EndComp
 NoConn ~ 9150 1750
 NoConn ~ 9150 2350
-NoConn ~ 9150 2550
 $Comp
 L Device:LED D1
 U 1 1 5ECDEFD9
@@ -5665,7 +5646,6 @@ Text GLabel 4600 3300 2    50   Input ~ 0
 IND_LED2
 Text GLabel 4600 3400 2    50   Input ~ 0
 IND_LED3
-NoConn ~ 13000 2200
 NoConn ~ 13000 2000
 $Comp
 L power:+5V #PWR0102
@@ -5728,4 +5708,30 @@ Text GLabel 4600 4600 2    50   Input ~ 0
 Row4
 Text GLabel 4600 4500 2    50   Input ~ 0
 Row5
+NoConn ~ 12000 2200
+Wire Wire Line
+	9150 2050 9350 2050
+Wire Wire Line
+	9150 1950 9400 1950
+Wire Wire Line
+	9400 2150 9400 1950
+Wire Wire Line
+	9150 2150 9400 2150
+Connection ~ 9400 1950
+Wire Wire Line
+	9400 1950 9450 1950
+Wire Wire Line
+	9350 2250 9350 2050
+Wire Wire Line
+	9150 2250 9350 2250
+Connection ~ 9350 2050
+Wire Wire Line
+	9350 2050 9450 2050
+Wire Wire Line
+	9150 2550 9250 2550
+Wire Wire Line
+	9250 2550 9250 1650
+Connection ~ 9250 1650
+Wire Wire Line
+	9250 1650 9300 1650
 $EndSCHEMATC
